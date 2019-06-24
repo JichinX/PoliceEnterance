@@ -1,4 +1,4 @@
-package com.codvision.policeenterance.base;
+package com.codvision.webproject.base;
 
 import com.codvision.check.impl.WebContainerActivity;
 

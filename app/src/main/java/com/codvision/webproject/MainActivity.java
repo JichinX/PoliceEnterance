@@ -1,8 +1,8 @@
-package com.codvision.policeenterance;
+package com.codvision.webproject;
 
 import android.os.Bundle;
 
-import com.codvision.policeenterance.base.BaseWebActivity;
+import com.codvision.webproject.base.BaseWebActivity;
 
 import static me.xujichang.web.WebConst.FLAG.WEB_URL;
 
@@ -10,7 +10,7 @@ public class MainActivity extends BaseWebActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        getIntent().putExtra(WEB_URL, "http://10.10.100.6:9987/company/html/App/index.html");
+        getIntent().putExtra(WEB_URL, BuildConfig.WEB_URL);
         super.onCreate(savedInstanceState);
         hideActionBar();
     }

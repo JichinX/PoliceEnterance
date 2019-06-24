@@ -1,10 +1,9 @@
-package com.codvision.policeenterance.base;
+package com.codvision.webproject.base;
 
 import com.codvision.check.CheckInit;
 
 import me.xujichang.basic.BaseInit;
 import me.xujichang.ui.UIInit;
-import me.xujichang.web.WebInit;
 
 /**
  * Des:PoliceEnterance - com.codvision.policeenterance.base

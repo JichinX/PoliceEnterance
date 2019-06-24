@@ -1,8 +1,8 @@
-package com.codvision.policeenterance;
+package com.codvision.webproject;
 
 import android.support.multidex.MultiDexApplication;
 
-import com.codvision.policeenterance.base.Const;
+import com.codvision.webproject.base.Const;
 
 import me.xujichang.basic.util.InitUtil;
 
