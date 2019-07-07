@@ -24,6 +24,18 @@ android {
     }
     flavorDimensions 'app'
     productFlavors {
+        _test {
+            dimension 'app'
+            versionCode 1000
+            versionName "1.0.0"
+            applicationIdSuffix = '.test'
+            manifestPlaceholders = [
+                    PACKAGE_NAME: defaultConfig.applicationId + applicationIdSuffix,
+                    APP_NAME    : "@string/test_app_name",
+                    APP_ICON    : ""
+            ]
+            buildConfigField "String", "WEB_URL", '"file:///android_asset/web/index.html"'
+        }
         enterance {
             dimension 'app'
             versionCode 1000
@@ -52,7 +64,7 @@ android {
 }
 
 dependencies {
-    def modulesVersion = '1.0.5-alpha01'
+    def modulesVersion = '1.0.5-alpha03'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "com.android.support:appcompat-v7:28.0.0"
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
@@ -60,6 +72,7 @@ dependencies {
     implementation "com.github.xujichang.Modules:ui:$modulesVersion"
     implementation "com.github.xujichang.Modules:web:$modulesVersion"
     implementation "com.github.xujichang.Modules:basic:$modulesVersion"
+    implementation "com.github.xujichang:Utils:1.0.0"
     implementation 'com.android.support:multidex:1.0.3'
 
     implementation 'com.android.support:design:28.0.0'

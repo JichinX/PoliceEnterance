@@ -1,4 +1,5 @@
 <resources>
     <string name="enterance_app_name">余杭公安门户</string>
     <string name="videocenter_app_name">视频作战</string>
+    <string name="test_app_name">Web测试</string>
 </resources>
