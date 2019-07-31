@@ -15,6 +15,7 @@ import me.xujichang.web.interfaces.IWebJsCallBack;
 public abstract class BaseWebActivity extends WebContainerActivity {
     @Override
     protected void initExtHandler(IWebJsCallBack callBack) {
+//        new LogHandler(getWebView()).addJsCallBack(callBack);
         super.initExtHandler(callBack);
     }
 }
